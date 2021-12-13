@@ -1,0 +1,124 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API Documentation",
+    "version": "1.0.0",
+    "title": "Whatsapp API Documentation"
+  },
+  "host": "localhost:3000",
+  "tags": [],
+  "schemes": ["http"],
+  "paths": {
+    "/sendText": {
+      "post": {
+        "summary": "Untuk kirim Pesan Text",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "number"
+            },
+            "example": "082xxx atau 6282xxx"
+          },
+          {
+            "name": "message",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Pesannya"
+          }
+        ]
+      }
+    },
+    "/sendImage": {
+      "post": {
+        "summary": "Untuk kirim Pesan Text",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "number"
+            },
+            "example": "082xxx atau 6282xxx"
+          },
+          {
+            "name": "message",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Pesannya"
+          },
+          {
+            "name": "image",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "URL Image"
+          },
+          {
+            "name": "caption",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Caption Dari Image itu"
+          }
+        ]
+      }
+    },
+    "/sendPdf": {
+      "post": {
+        "summary": "Untuk kirim Pesan Text",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "number"
+            },
+            "example": "082xxx atau 6282xxx"
+          },
+          {
+            "name": "message",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Pesannya"
+          },
+          {
+            "name": "pdf",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "URL PDF"
+          },
+          {
+            "name": "caption",
+            "in": "x-www-form-urlencode",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "Caption Dari PDF itu"
+          }
+        ]
+      }
+    }
+  }
+}

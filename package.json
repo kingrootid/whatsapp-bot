@@ -1,0 +1,21 @@
+{
+  "name": "whatsappbot",
+  "version": "1.0.0",
+  "description": "Whatsapp Bot To Send Text Image Or Documents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Whatsapp",
+    "RootWritter"
+  ],
+  "author": "RootWritter",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "swagger-ui-express": "^4.2.0",
+    "venom-bot": "^4.0.3"
+  }
+}
